@@ -59,7 +59,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
+    "http://localhost:3000", "https://reserve-todos.vercel.app"
 ]
 
 SIMPLE_JWT = {
