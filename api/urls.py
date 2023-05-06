@@ -1,12 +1,13 @@
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
-from api.views import TaskViewSet, CreateUserView, TaskListView, TaskRetrieveView,\
+from api.views import PostViewSet, TaskViewSet, CreateUserView, TaskListView, TaskRetrieveView,\
     PostListView, PostRetrieveView
 
 
 router = routers.DefaultRouter()
 router.register('tasks', TaskViewSet, basename='tasks')
+router.register('posts', PostViewSet, basename='tasks')
 
 urlpatterns = [
     path('list-post/', PostListView.as_view(), name='list-post'),
