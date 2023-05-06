@@ -7,7 +7,7 @@ from api.views import PostViewSet, TaskViewSet, CreateUserView, TaskListView, Ta
 
 router = routers.DefaultRouter()
 router.register('tasks', TaskViewSet, basename='tasks')
-router.register('posts', PostViewSet, basename='tasks')
+router.register('posts', PostViewSet, basename='posts')
 
 urlpatterns = [
     path('list-post/', PostListView.as_view(), name='list-post'),
